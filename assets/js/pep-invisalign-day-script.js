@@ -42,13 +42,6 @@
 
 $(document).ready(function() {
 
-	  //use it or lose it append
-
-	  if (theWindow.width() < 1000) {
-		$(".use-it-move-to-bottom").insertBefore(".use-it-very-bottom-text")
-		$(".use-it-top-image").insertBefore(".use-it-move-to-bottom")
-	}
-
 	var slider = $("#slider"),
 
 		sliderContent = $(".ba-slider"),

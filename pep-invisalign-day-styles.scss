@@ -2,17 +2,19 @@
 .animated{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}@keyframes slideIn{from{transform:translate3d(0,-100%,0)}to{transform:translate3d(0,0,0)}}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes pulse{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}@keyframes pulse{from{transform:scale3d(1,1,1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scale3d(1,1,1)}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}@-webkit-keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInLeft{from{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}@keyframes fadeInRight{from{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{from{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes fadeOut{from{opacity:1}to{opacity:0}}.zoomIn{-webkit-animation-name:zoomIn;animation-name:zoomIn}@-webkit-keyframes zoomIn{from{opacity:0;transform:scale3d(0.3,0.3,0.3)}50%{opacity:1}}@keyframes zoomIn{from{opacity:0;transform:scale3d(0.3,0.3,0.3)}50%{opacity:1}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInDown{from{transform:translate3d(0,-100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}@keyframes slideInDown{from{transform:translate3d(0,-100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInLeft{from{transform:translate3d(-100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}@keyframes slideInLeft{from{transform:translate3d(-100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes slideInRight{from{transform:translate3d(100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}@keyframes slideInRight{from{transform:translate3d(100%,0,0);visibility:visible}to{transform:translate3d(0,0,0)}}.slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}@-webkit-keyframes slideInUp{from{transform:translate3d(0,100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}@keyframes slideInUp{from{transform:translate3d(0,100%,0);visibility:visible}to{transform:translate3d(0,0,0)}}
 .flex-ed,.col-flex-ed{display:flex}.flex-ed{flex-direction:row}.col-flex-ed{flex-flow:column}star{line-height:1.5;margin:7px auto;display:block}star:after{font-size:26px;font-family:'fontello';font-weight:400;margin:0;font-style:normal;content:'\e80f \e80f \e80f \e80f \e80f';color:#fcd800;padding:0 10px}
 
-$primary: #62AFE5;
-$secondary:#181B46;
-$font: proxima-nova, sans-serif; 
-$font2: trajan-pro-3, serif;
-$text: #1b1b1b;
+$primary: #E9BD6F;
+$secondary:#CB8228;
+$tertiary: #21475C;
+$font: 'DM Sans', sans-serif;
+$font2: 'DM Sans', sans-serif;
+$text: #000;
 
 #fixed-tabs{position:fixed;bottom:0;right:0;width:100%;text-align:center;line-height:1;z-index:1000;display:flex}
 #fixed-tabs a{font-size:14px;color:#fff;font-weight:700;text-transform:uppercase;padding:14px 0;flex:1}
 #fixed-tabs .ra {flex: 2;}
-#fixed-tabs a:nth-of-type(odd){background-color:#40adeb}
-#fixed-tabs a:nth-of-type(even){background-color:#006caa}
+#fixed-tabs a:nth-of-type(odd){background-color:$primary}
+#fixed-tabs a:nth-of-type(even){background-color:$tertiary}
+#fixed-tabs .ra, #fixed-tabs .map {color: $text;}
 @media (min-width: 1031px) {
 #fixed-tabs{display:none}
 }
@@ -23,12 +25,12 @@ footer{margin-bottom:42px!important}
 @media (max-width: 600px) {
 #fixed-tabs strong{display:none}
 }
-body{overflow-x:hidden;position:relative;background:#F8F8F8;text-align:center;color:$text;font:400 18px/26px $font;}
+body{overflow-x:hidden;position:relative;background:#F7F0E4;text-align:center;color:$text;font:400 18px/26px $font;}
 p{color: $text;font:400 18px/1.6 $font; letter-spacing: 0.36px;}
 a{display:inline-block;text-decoration:none;cursor:pointer;color:$secondary}
 a:hover{color:$secondary}
 h1,h2 h3,h4,h5,h6{font-family:$font;text-align:center}
-h1{margin:0;color:$primary;font:400 87px/1.3 $font2;letter-spacing:1.1px}
+h1{margin:0;color:$primary;font:700 87px/1.3 $font2;letter-spacing:1.1px}
 h1 small{font-size:30px;letter-spacing:.75px}
 h1 span{font:400 60px/1 $font2;color: $text;display:block;letter-spacing:0}
 h2{font:700 42px/1.1 $font2,sans-serif;color:$secondary;margin:10px 0}
@@ -41,14 +43,15 @@ main ul{list-style:none;padding:0;margin:10px auto;text-align:left;display:table
 
 .btn,.btn-alt{position:relative;display:inline-block;cursor:pointer;padding:15px 20px;text-align:center;color:#fff;background-color: $primary; min-width:250px;font:700 13px/1.1 $font;letter-spacing:1.8px;
     span{display:block;font-size:27px;letter-spacing:2.9px;margin-bottom:2px;}
-    &:hover{background-color:$secondary;color:#fff}
+    &:hover{background-color:$tertiary;color:#fff}
 }
 
-header{position:relative;padding:10px;z-index:100;background-color:#FFF;
-    #nav{display:flex;max-width:1190px;justify-content:space-between;margin:auto;align-items:center;padding:2px;
+header{position:relative;padding:10px;z-index:100;background-color:#FFF;border-bottom: 10px solid $secondary;
+    #nav{display:flex;max-width:1300px;justify-content:space-between;margin:auto;align-items:center;padding:2px;
         .header-buttons{margin:0;padding:7px 10px;font-size:14px;letter-spacing:normal;
-            .btn,.btn-alt{font-size:19px;letter-spacing:1.2px;border:none;width:200px;border-radius: 10px;margin:2px;padding: 10px; min-width: 160px;
-                span{font-size:35px;letter-spacing:normal;text-transform: uppercase;margin-bottom: 0;}
+            .btn,.btn-alt{color: $text;font-size:16px;text-transform:uppercase;letter-spacing:1.2px;border:none;width:200px;margin:2px;padding: 10px; min-width: 160px;
+                span{font-size:33px;letter-spacing: 4px;;text-transform: uppercase;margin-bottom: 0;}
+                &:hover {color: #fff;}
             }
         }
         .logo{margin:0; }
@@ -56,8 +59,8 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
         .phy{font-size:24px;color:$text;line-height:1.26;font-weight:400;letter-spacing:.47px;
             &:hover{color:$secondary;}
         }
-        .phone {font-weight: 400;font-size: 39px;
-            span {text-transform: uppercase;font-weight: 600;margin-bottom: 5px;}
+        .phone {font-weight: 700;font-size: 39px;
+            span {text-transform: uppercase;font-weight: 600;margin-bottom: 5px;font-size: 16px;letter-spacing: 1.3px;}
         }
     }
     #mobile-btns {
@@ -73,7 +76,7 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
             margin: 0;
             text-transform: uppercase;
             min-width: auto;
-            background-color: $secondary;
+            background-color: $tertiary;
             span {
                 width: 100%;font-size: 28px;
               }
@@ -108,46 +111,56 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
 }
 
 
-/*Use it or Lose it Page*/
 .reorder-top {display: block;}
-.useit .top .big {color: $text; font-size: 45px; font-weight: 600; letter-spacing: normal;}
-.bg-1{background-color: #F3F3F5; padding: 10px;}
-.bg-2{background-color: $secondary; padding: 10px;}
-.useit #main-nav, .useit .mean-bar{display: none !important;}
-.useit .top{font-size: 26px; font-weight: 700; max-width: 1200px; margin: 50px auto 20px;
-    h1 {margin-bottom: 15px;}
-}
-.useit hr {max-width: 600px;background-color: #62AFE5;height: 2px;}
-.useit .use-banner{ background: url(assets/images/pep-invis-use-bkg.png);background-size: cover;background-repeat:no-repeat; margin: 60px auto; display: flex; align-items:flex-start; justify-content: center; flex-wrap: wrap;
-    figure {
-        .big{font-weight: 700; color: $text; font-size: 125px; letter-spacing: -5px; line-height: 1.2;
-            span{font-size: 40px; font-weight: 400; letter-spacing: 2px; display: inline-block; }
+.bg-1{background-color: #F7F0E4; padding: 50px 10px 10px;}
+.bg-2{background-color: $tertiary; padding: 10px 10px 65px;}
+#top-section #main-nav, #top-section .mean-bar{display: none !important;}
+
+#top-section {
+    .top {
+        h1 {margin-bottom: 0;color: $tertiary;}
+        h2 {font-weight: 500;font-size: 50px;color: $text;}
+    }
+    #football-spacer {position: relative;display:flex;flex-wrap:wrap;align-items:center;max-width: 500px;
+        margin: 30px auto auto;
+        &:before, &:after {width: 228px; height: 2px; background-color: #000;content: "";}
+    }
+    .bg-1 {
+        > article {font-size: 26px; font-weight: 700; max-width: 1200px; margin: 30px auto 100px;
+            .big {color: $text; font-size: 29px; font-weight: 400;line-height: 32px; letter-spacing: normal;margin-top: 0;}
         }
-        h3 { margin: 40px auto 20px; font-size: 30px; font-weight: 700; font-style: normal; color: #fff;letter-spacing: -0.6px; line-height: 1.67; }
     }
-    article{flex: 0 1 545px; font-size: 26px; letter-spacing: -0.52px;
-        div {position: relative;}
-        p{margin-bottom: 30px; color: $text;}
+    #bubbles{ background: url(assets/images/pep-invis-use-bkg.png);background-size: cover;background-repeat:no-repeat; margin: 60px auto; display: flex; align-items:flex-start; justify-content: center; flex-wrap: wrap;
+        figure {
+            .big{font-weight: 700; color: $text; font-size: 125px; letter-spacing: -5px; line-height: 1.2;
+                span{font-size: 40px; font-weight: 400; letter-spacing: 2px; display: inline-block; }
+            }
+            h3 { margin: 40px auto 20px; font-size: 30px; font-weight: 700; font-style: normal; color: #fff;letter-spacing: -0.6px; line-height: 1.67; }
+        }
+        article{flex: 0 1 545px; font-size: 26px;
+            figcaption {font-size: 45px; font-weight: 500;margin-top: 50px;letter-spacing: 2px;
+                small {display: block;text-transform: uppercase;margin-top: 10px;font-size: 18px;letter-spacing: 3px;}
+            }
+        }
     }
-}
-
-.safe-bar{width:100%;position:relative;-webkit-box-shadow:0 3px 15px rgba(0,0,0,0.2);box-shadow:0 3px 15px rgba(0,0,0,0.2);background-color:#FFC748;z-index:10;color:#000;font:700 19px/1.2 Spartan,sans-serif;padding:7px 10px;text-align:center;letter-spacing:.47px;-webkit-transition:.3s all;transition:.3s all;padding-left:400px}
-.safe-bar span{margin:0 10px}
-
-.use-it-top-image div figcaption {color: #000; padding-top: 55px;font-size: 45px;font-weight: 600; 
-    span {padding: 10px 30px; color: #81B2E0;}
-}
-.use-it-top-image p {color: $text;}
-.useit {
     .content{ max-width: 1260px; margin: 60px auto; background-color: #f0f0f0; 
-        .call{padding: 30px 10px; display: flex; align-items: center; justify-content: space-around; background-color: #fff;
-            article {flex: 0 1 700px;
-                p{line-height: 59px;font-size: 40px; padding: 10px; color: $text; font-family: $font; font-weight: 600; text-align: left; letter-spacing: -.02em;}
+        .call{padding: 40px; display: flex; align-items: center; justify-content: space-around; background-color: #fff;
+            article {
+                p{line-height: 59px;font-size: 46px; padding: 10px 10px 10px 30px; color: $text; font-family: $font; font-weight: 400; text-align: left; }
                 a{color: $primary;
                     &:hover {color: $text;}
                 }
             }
-            figure{flex: 0 0 400px;}
+            figure{flex: 0 0 400px;position:relative;
+                img {width: 100%;}
+                figcaption {position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px;}
+            }
         }
     }
     .form {background-color: #f0f0f0;
@@ -156,12 +169,12 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
                 .flex-ed {width: 100%; justify-content: space-between;}
             }
         }
-        input, textarea{background-color: #fff; height: 59px; color: $text; font-size: 15px; padding: 10px; text-align: left;}
+        input, textarea{background-color: #fff; height: 59px; color: $text; font-size: 20px; padding: 10px; text-align: left;}
         .input{display: block; text-align: left;margin-top: 20px;}
         input[type=checkbox]{height: 30px; width: 30px; display: inline-block; vertical-align: middle;}
         input[type=checkbox] + label{font-size: 15px; color: $text; margin-left: 5px;}
-        .big-label{display: block; font-size: 20px; font-weight: 700; color: $text;}
-        .simple .btn {width: 95%;}
+        .big-label{display: block; font-size: 20px; font-weight: 700; color: $text;text-align: left;}
+        .simple .btn {width: 95%;text-transform: uppercase;color: #000}
         ::-webkit-input-placeholder { color: $text; }
         :-moz-placeholder { color: $text; }
         ::-moz-placeholder { color: $text; }
@@ -175,20 +188,13 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
             .smalltext { margin-top: 30px; color: $text; font-size: 20px; font-weight: 700; font-style: normal; letter-spacing: normal; line-height: 1; }
         }
     }
-    .use-it-very-bottom-text .big {color: #fff; font-size: 46px;font-weight: 400;line-height: 55px;}
+    #bottom-text .big {color: #fff; font-size: 46px;font-weight: 400;line-height: 55px;max-width: 1000px;
+        margin: auto;}
 }
 
 
 .fo-form { max-width: 505px; flex: 0 1 505px; margin: 0 auto;
     .title { text-align: left }
-}
-
-.space-limited {max-width: 1200px; margin: 60px auto; 
-    h3 {color: $text; font-weight: 700; font-family: $font; font-size: 26px;}
-    ul { max-width: 725px;
-        li:before {content: '-'; color: $text;}
-    }
-    .space {font-size: 25px;}
 }
 
 #form { text-align: center; overflow: hidden; margin: 0px 0 0 auto; padding: 0; width: 100%;
@@ -216,33 +222,53 @@ header{position:relative;padding:10px;z-index:100;background-color:#FFF;
     &.even figure{order:-1;margin-right:40px}
 }
 
-footer{overflow:hidden; padding:40px 0 0; background: rgb(67,68,69);
-    background: linear-gradient(0deg, rgba(67,68,69,1) 0%, rgba(46,47,48,1) 100%);
-    h2{font:400 60px/1.2 $font; color:#fff;text-align:center;margin:0 auto 30px}
-
-    .split{justify-content: center; max-width: 1200px;align-items:flex-start;margin:auto;margin-bottom:90px;
-        article{margin-top:10px; flex: 0 1 412px; margin-right: 40px;background-color:#fff;border-radius:10px;box-shadow:1.6px 2.5px 7px rgba(15,16,16,0.35);padding:50px 25px;
-            p{margin-top:20px;text-align:center;font:700 32px/1.2 $font2; letter-spacing: .03em; margin-bottom:10px;color:#000;}
-            #phone, #schedule p {font-family:$font;}
-            #phone {font-size: 39px;font-weight: 400;
-                span {font-size: 18px;text-transform: uppercase;font-weight: 600;}
-                a {font-size: 39px;letter-spacing: 0;color: $primary;
-                    &:hover {color: $secondary}
-                }
+/* ------------- Footer -------------- */
+footer{overflow:hidden; padding:40px 0 0;background-color:$text; background: #fff;
+    h2{font:500 45px/1.2 $font2; color: $text;text-align:center;margin:0 auto 50px!important; position: relative;
+        &:after {content: ''; background-color: $primary; position: absolute; height: 4px; width: 85px; bottom: -20px; right: 50%; transform: translate(50%);}
+    }
+    article {
+        .phy {font-family: $font; font-weight: normal; font-size: 20px; color: $text;margin: 30px auto;}
+        .phone {font-size: 41px;color: $primary;font-weight: 700;}
+        form{padding: 0 !important;max-width: 350px;
+            margin: auto;}
+    }
+    .form {background: none !important;
+        .simple {
+            input, textarea {text-align:center;width: 80%;color: #000;font-size: 20px;padding:10px;
+                &::placeholder {color: #000;}
             }
-            #schedule {
-                p {text-transform: uppercase;font-size: 39px;font-weight: 400;
-                    span {display:block;font-size: 18px;}
-                }
-            }
-            > a {font-size: 24px;line-height: 28px;
-                &:hover {color: $primary;}
-            }
+            input {height: auto;}
+            textarea {height: 100px;}
+            .btn {text-transform: uppercase;color: #000;width: 80%;}
         }
     }
-    figure{margin-top:10px;flex:0 1 540px;color:#fff;
-        iframe {border-radius: 10px;}
+    .split{justify-content:center;max-width:95vw;align-items:flex-start;margin:auto;margin-bottom:30px; flex-flow: nowrap;
+        article{margin-top:10px; flex: 0 1 30%;padding:20px 25px 20px; align-items: center;
+            &:last-of-type {
+                h2 {margin-bottom: 40px;}
+            }
+            p{margin-top:20px;text-align:center;font:400 32px/1.2 $font; letter-spacing: .03em; margin-bottom:10px;color:$text;
+                span:first-child{font-size:20px;}
+                .phone-footer {color: $primary;}
+                small{font-size:19px;line-height:29px; text-transform: uppercase;}
+                &:last-of-type{line-height:.8}
+                strong {text-transform:uppercase; font-weight: 400;}
+            
+            }
+            
+        }
     }
+    figure{margin-top:10px;flex:0 1 540px;color:#fff; padding: 20px 0;}
+    .frame{overflow:hidden;display:table;width:95%;margin:auto;
+        iframe{height:360px;display:block;max-width:780px;margin:auto;width:100%;}
+    }
+    .copy {margin-top:20px;padding:30px 10px;margin:auto; font:400 18px/1.4 $font; color:#000; 
+        a, p {font:400 18px/1.4 $font; color:$primary;}
+         p {margin: 20px auto; max-width: 1090px;}
+         a:hover{color:$secondary;}
+         span {margin: 0 2px;}
+     }
 }
 
 figcaption{text-align:center;
@@ -251,27 +277,19 @@ figcaption{text-align:center;
     &:hover p{color:$secondary;}
 }
 
-.copy {margin-top:20px;padding:30px 10px; background-color:#262626;;margin:auto;text-transform:uppercase; font:400 16px/1.4 $font; color:#fff; 
-   a, p {font:400 14px/1.4 $font; color:#fff;}
-    p {margin: 20px auto; max-width: 1090px;}
-    a:hover{color:$secondary;text-decoration:underline}
-    span {margin: 0 2px;}
-
-}
-
 
 #contact{-webkit-box-flex:0;-ms-flex:0 1 460px;flex:0 1 460px;padding:10px 10px 20px}
 #map{display:table;width:100%;
     iframe{display:block;height:300px}
 }
 
-.simple{margin:0 0 5px;
+.simple{
     .btn{width:260px;font-size:16px;font-weight:700;padding:15px 10px;border:1px solid $primary;background-color:$primary;color:#fff;
-        &:hover{background-color:#006caa;color:#fff}
+        &:hover{background-color:$tertiary;color:#fff!important}
     }
     input,select{height:35px}
     textarea{height:80px;padding-top:8px}
-    input,textarea,select{text-align:center;outline:none;border:none;background-color:#121212;margin:3px 0;width:95%;padding:3px 10px;font-size:16px;color:#fff; }
+    input,textarea,select{text-align:center;outline:none;border:none;background-color:#F0F0F0;margin:3px 0;width:95%;padding:3px 10px;font-size:16px;color:#fff; }
     input:focus, textarea:focus, .btn:focus, select:focus{background-color:$primary;box-shadow:inset 0 -3px 0 $primary}
 }
 
@@ -284,6 +302,9 @@ figcaption{text-align:center;
 hr{margin-top:30px;}
 @media (max-width: 1300px) {
     #banner {background-position: 10%;}
+    footer .split {flex-wrap: wrap;}
+    footer .split figure {display: none;}
+    footer .split article {flex-basis: 90%; align-items: center;}
 }
 @media (max-width: 1110px) {
 h1{font-size:50px}
@@ -304,16 +325,19 @@ h1 span{font-size:40px}
     header .phy{display:none}
     .phone{font-size:30px;margin:0}
 hr{display:block;max-width:95%}
-.useit .use-banner article {display: flex; flex-direction: column-reverse; margin-top: 40px;}
-.useit .use-banner article p {font-size: 14px; line-height: 1; margin: 10px auto;}
-.useit .use-banner article p br {display: none}
+#top-section .bg-1 > article {margin-bottom: 0;}
+#top-section #bubbles article figcaption {font-size: 38px;margin-top: 30px;}
+#top-section #bubbles article {margin: 40px auto;}
+#top-section #bubbles article p {font-size: 14px; line-height: 1; margin: 10px auto;}
+#top-section #bubbles article p br {display: none}
 .use-it-top-image div figcaption {position: relative; margin: auto;}
 
 footer .flex-ed{flex-wrap:wrap;max-width:700px;margin:auto}
 footer .split {justify-content: center;}
+footer .split article {flex-basis: auto;margin: 40px 20px;flex: 1;padding: 0;}
 #contact{flex:0 1 690px}
 #services,#footer-form{flex:1}
-footer .split article {margin: 20px;}
+footer .split article:last-of-type h2 {font-size: 42px;}
 }
 
 @media (max-width: 890px) {
@@ -326,10 +350,10 @@ footer .split article {margin: 20px;}
     #nav{flex-wrap:wrap;text-align:center;padding-bottom:10px;justify-content:space-around}
     #nav .header-buttons{display:table;margin:10px 5px}
     .copy span:last-of-type{display:block;font-size:0}
-    .useit .use-banner figure .big { font-size: 80px; }
-    .useit .content .call { display: block; text-align: center; padding-bottom: 5px; }
-    .useit .content .call article { font-size: 30px; line-height: 1.2; }
-    .useit .content .call article p {margin: 15px auto;text-align:center;}
+    #top-section #bubbles figure .big { font-size: 80px; }
+    #top-section .content .call { display: block; text-align: center; padding: 10px; }
+    #top-section .content .call article { font-size: 30px; line-height: 1.2; }
+    #top-section .content .call article p {margin: 15px auto;text-align:center;font-size: 40px;}
     footer .split > div{margin-top:0}
     footer article{margin-bottom:30px}
     footer h2{font-size:50px;margin-top:0;padding:0 10px}
@@ -338,13 +362,18 @@ footer .split article {margin: 20px;}
     footer figure{display:none;}
     figcaption{margin-top:0}
     .copy{padding:30px 10px 20px}
-    footer .split {margin-bottom: 40px;}
-    .useit .form .input {max-width: 140px;
+    footer .split {margin-bottom: 0;}
+    #top-section .form .input {max-width: 140px;
         margin: 20px auto;}
+    #top-section .content .call article p {padding: 10px;}
 }
 
 @media (max-width: 590px) {
+    #top-section .form .big-label {text-align: center;}
     #nav .logo{margin-bottom:20px;}
+    #top-section #football-spacer {
+        &:before, &:after {content: none;}
+    }
     h1 span{font-size:40px;margin:10px auto}
     h2{margin-top:20px;font-size:50px}
     #services-custom{padding:0}
@@ -366,7 +395,7 @@ footer .split article {margin: 20px;}
     #services h3{margin-top:10px}
     .copy{padding-bottom:20px;}
     .services .flex-ed img {max-width:200px;}
-    .useit .use-banner article div figcaption span {padding: 5px;}
+    #top-section #bubbles article div figcaption span {padding: 5px;}
 }
 
 @media (max-width: 370px) {
